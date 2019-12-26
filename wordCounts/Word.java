@@ -34,6 +34,7 @@ public class Word {
 		decay--;
 	}
 	
+	//
 	boolean isVisible()
 	{
 		if ((loc.x < 0) || (loc.x > p.width ))

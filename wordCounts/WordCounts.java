@@ -9,7 +9,6 @@ import processing.data.IntDict;
 public class WordCounts extends PApplet {
 	// 
 	// Setting definitions
-	//
 	int display = 1;
 	IntDict counts;
 	int defaultColor = 255;
@@ -21,7 +20,7 @@ public class WordCounts extends PApplet {
 	boolean isRecording = false;
 
 
-	//
+
 	// Set PApplet handle name
 	//
 	public static void main(String[] args) {
