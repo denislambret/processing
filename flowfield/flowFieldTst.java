@@ -1,7 +1,6 @@
 package flowfield;
 
-import processing.core.PApplet;
-import processing.core.PVector;
+import processing.core.*;
 
 public class flowFieldTst extends PApplet {
 	//

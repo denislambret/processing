@@ -9,7 +9,7 @@ public class Particule {
 	PVector pos, vel, acc;
 	PVector prevPos;
 	int cols;
-	float scl;
+	float scl = 19;
 	float maxspeed;
 
 	// Constructor

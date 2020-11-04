@@ -1,0 +1,11 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "g:\\processing-3.5.4\\core\\library\\core.jar",
+        "g:\\processing-3.5.4\\core\\library\\gluegen-rt.jar",
+        "g:\\processing-3.5.4\\core\\library\\gluegen-rt-natives-windows-i586.jar",
+        "g:\\processing-3.5.4\\core\\library\\jogl-all.jar",
+        "g:\\processing-3.5.4\\core\\library\\jogl-all-natives-windows-i586.jar",
+        "c:\\Users\\dns\\Documents\\Processing\\libraries\\controlP5\\library\\controlP5.jar"
+    ]
+}
