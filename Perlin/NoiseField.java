@@ -13,6 +13,7 @@ public class NoiseField extends PApplet {
     PVector[] field;
     int cols, rows;
 
+    // Perlin noise demo code
     public static void main(String _args[]) {
         PApplet.main(NoiseField.class.getName());
     }
