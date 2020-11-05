@@ -5,7 +5,7 @@ import processing.core.*;
 public class NoiseField extends PApplet {
     int bgColor = 64;
     int resX = 1024;
-    int resY = 1024;
+    int resY = 800;
     int step = 30;
     float inc = 0.01f;
     float zoff = 0.0f;

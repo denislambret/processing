@@ -3,6 +3,7 @@ package Perlin;
 import processing.core.*;
 
 public class Particule {
+    // Simple particle class...
     PApplet p;
     PVector pos;
     PVector vel;
