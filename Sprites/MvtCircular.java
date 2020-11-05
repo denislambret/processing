@@ -1,8 +1,6 @@
 package Sprites;
 
-import processing.core.PApplet;
-import processing.core.PConstants;
-import processing.core.PVector;
+import processing.core.*;
 
 public class MvtCircular {
 

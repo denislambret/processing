@@ -4,9 +4,9 @@ import processing.core.*;
 
 public class NoiseField extends PApplet {
     int bgColor = 64;
-    int resX = 1024;
-    int resY = 800;
-    int step = 30;
+    int resX = 2048;
+    int resY = 1024;
+    int step = 40;
     float inc = 0.01f;
     float zoff = 0.0f;
 
@@ -24,23 +24,24 @@ public class NoiseField extends PApplet {
     }
 
     public void setup() {
-        background(bgColor);
+        colorMode(HSB);
+        background(bgColor,0,10);
         cols = floor(width / step) + 1;
         rows = floor(height / step) + 1;
         field = new PVector[cols * rows];
     }
 
     public void draw() {
-        background(bgColor);
-        stroke(255);
-        strokeWeight(.5f);
-               
+        background(bgColor,0,10);
+                              
         float yoff = 0.0f;
         for (int y = 0; y < rows; y++) {
             float xoff = 0.0f;
             for (int x = 0; x < cols; x++) {
                 
-                float angle = noise(xoff, yoff, zoff) * TWO_PI * 4;
+                float n =noise(xoff, yoff, zoff);
+                float angle =  n * TWO_PI * 4;
+                float c = map(n,-1,1,0,255) ;
                 PVector v = PVector.fromAngle(angle);
                 v.setMag(1);
                 int index = x + y * cols;
@@ -49,11 +50,14 @@ public class NoiseField extends PApplet {
                 pushMatrix();
                     translate(x * step, y * step);
                     rotate(v.heading());
+                    colorMode(HSB);
+                    stroke(c,255,250,125);
+                    strokeWeight(.5f);
                     line(0, 0, step, 0);
+                    strokeWeight(4);
+                    point(0,0);
                 popMatrix();
 
-                // fill(c);
-                // rect(x * step, y * step, step, step);
                 xoff = xoff + inc;
             }
             yoff = yoff + inc;
