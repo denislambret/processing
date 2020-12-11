@@ -51,7 +51,7 @@ class Particule {
       float strength = G / (d * d);
       force.setMag(strength);
        if (d < r) {
-         force.mult(-5);
+         force.mult(-10);
        }
         acc.add(force);
     }
