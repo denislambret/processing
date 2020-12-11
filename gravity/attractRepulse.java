@@ -6,7 +6,7 @@ import java.util.*;
 public class attractRepulse extends PApplet {
   List<PVector> attractors = new ArrayList<PVector>();
   List<Particule> particules = new ArrayList<Particule>();
-  int maxParticules = 10000;
+  int maxParticules = 1000;
   int radius = 100;
   public static void main(String _args[]) {
     PApplet.main(attractRepulse.class.getName());
@@ -14,6 +14,8 @@ public class attractRepulse extends PApplet {
 
   public void settings() {
     size(1200, 800);
+    // or fullscreen
+    // fullscreen();
   }
 
   public void setup() {
